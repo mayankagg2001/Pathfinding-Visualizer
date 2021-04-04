@@ -91,7 +91,7 @@
 
 @keyframes animation3{
   0% {
-    transform: scale(.3);
+    transform: scale(.4);
     background-color: rgba(0, 0, 66, 0.75);
     border-radius: 100%;
     }

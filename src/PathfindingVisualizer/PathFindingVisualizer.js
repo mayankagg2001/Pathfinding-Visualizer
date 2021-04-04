@@ -43,10 +43,10 @@ function PathFindingVisualizer() {
     let istarget = false;
     let isweighted = false;
     let iswall = false;
-    let speed = 8;
+    let speed = 14;
     const fast = 14;
-    const average = 43;
-    const slow  = 213; 
+    const average = 40;
+    const slow  = 215; 
 
     //window.addEventListener('resize', () => { setw(window.innerWidth); side = 0.98 * w / colnumber; });
 
@@ -590,7 +590,8 @@ function PathFindingVisualizer() {
     function animate2(arr,timetaken,check)
     {   
         var curr = timetaken;
-        const time = speed;
+        // const time = (speed*5>250)?250:speed*5;
+        const time = 100;
         if(check)
         {for(let i=arr.length-1;i>=0;i--)
         {
