@@ -20,9 +20,9 @@ function PathFindingVisualizer() {
     colnumber = (side === w / colnumber) ? colnumber : w / 11;
     let rownumber = Math.floor(0.78 * h / side);
     let startnodey = 7;
-    let startnodex = 15;
+    let startnodex = 10;
     let finishnodey = 7;
-    let finishnodex = 40;
+    let finishnodex = 30;
     let curstart = [7,15];
     let curtarget = [7,40];
     let ismarked = false;
@@ -44,9 +44,9 @@ function PathFindingVisualizer() {
     let isweighted = false;
     let iswall = false;
     let speed = 8;
-    const fast = 8;
-    const average = 40;
-    const slow  = 200; 
+    const fast = 14;
+    const average = 43;
+    const slow  = 213; 
 
     //window.addEventListener('resize', () => { setw(window.innerWidth); side = 0.98 * w / colnumber; });
 
