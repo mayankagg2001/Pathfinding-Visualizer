@@ -7,7 +7,8 @@ import {djikstra} from "./Algorithms/Djikstra's";
 import { randommaze } from './Mazes/RandomMaze';
 import { randomweight } from './Mazes/RandomWeight';
 import {a_star} from "./Algorithms/A_Star";
-
+import {basicrandommaze} from "./Mazes/BasicRandomMaze";
+import {basicrandomweight} from "./Mazes/BasicRandomWeight";
 export let isrunning = false;
 
 
@@ -416,7 +417,7 @@ function PathFindingVisualizer() {
         else
         {   
             instantanimate(arr[0]);
-            instantanimate2(arr[1]);
+            instantanimate2(arr[1],arr[2]);
         }
         //console.log("Function done");
         
@@ -462,7 +463,7 @@ function PathFindingVisualizer() {
         else
         {   
             instantanimate(arr[0]);
-            instantanimate2(arr[1]);
+            instantanimate2(arr[1],arr[2]);
         }
     }
 
@@ -498,7 +499,7 @@ function PathFindingVisualizer() {
         else
         {   
             instantanimate(arr[0]);
-            instantanimate2(arr[1]);
+            instantanimate2(arr[1],arr[2]);
         }
     }
 
@@ -535,7 +536,7 @@ function PathFindingVisualizer() {
         else
         {   
             instantanimate(arr[0]);
-            instantanimate2(arr[1]);
+            instantanimate2(arr[1],arr[2]);
         }
     }
 
@@ -610,10 +611,11 @@ function PathFindingVisualizer() {
         if(!check) setTimeout(()=>{alert("NO SHORTEST PATH FOUND");isrunning = false;},timetaken+time);
     }
 
-    function instantanimate2(arr)
-    {   console.log("instantanimate2");
-        console.log(arr);    
-    for(let i=arr.length-1;i>=0;i--)
+    function instantanimate2(arr,check)
+    {   //console.log("instantanimate2");
+     // console.log(arr);    
+    //if(check){
+     for(let i=arr.length-1;i>=0;i--)
         {
             const y = arr[i][0];
             const x = arr[i][1];
@@ -624,6 +626,11 @@ function PathFindingVisualizer() {
         
        
         }
+    //}
+    if(!check)
+    {
+        alert("NO SHORTEST PATH FOUND");
+    }
     
 
 
@@ -659,8 +666,10 @@ function PathFindingVisualizer() {
                 <button className="button" onClick = {()=>depthfirstsearch(1)}>Depth First Search</button>
                 <button className="button" onClick={()=>djikstraalgo(1)}>Djikstra's Algorithms</button>
                 <button className="button" onClick = {()=>astaralgo(1)}>A* Algorithm</button>
-                <button className = "button" onClick={()=>randommaze(grid)}>Random Walls</button>
-                <button className = "button" onClick={()=>randomweight(grid)}>Random Weights</button>
+                <button className="button" onClick={()=>randommaze(grid)}>Random Walls</button>
+                <button className="button" onClick={()=>randomweight(grid)}>Random Weights</button>
+                <button className="button" onClick={()=>basicrandommaze(grid)}>Random Wall Maze</button>
+                <button className="button" onClick={()=>basicrandomweight(grid)}>Random Weight Maze</button>
                 <div className="button">
                 <label for="select" id="labeltext">Speed:</label>
                 <select name="Speed"  onChange = {(e)=>{changespeed(e)}} className="select" id="select" >
@@ -670,6 +679,9 @@ function PathFindingVisualizer() {
                 </select>
                 </div>
                 
+            </div>
+            <div className="text">
+                <p><b>NOTE : </b>Click on the grid to add a wall . Click on grid while pressing w to add a weighted node . You can change position of start and target node anytime by dragging with mouse</p>
             </div>
             <div className="grid" 
             

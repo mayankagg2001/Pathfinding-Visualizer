@@ -8,7 +8,7 @@ let r = grid.length;
 let c = grid[0].length;
 
 let randompos = []; 
-for(let i=0;i<40;i++)
+for(let i=0;i<30;i++)
 {
     randompos.push([Math.floor(Math.random()*r),Math.floor(Math.random()*c)]);
 }
