@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Pathfinding-Visualizer/static/css/main.d43572bd.chunk.css",
+    "main.css": "/Pathfinding-Visualizer/static/css/main.35005ad0.chunk.css",
     "main.js": "/Pathfinding-Visualizer/static/js/main.7bc3c089.chunk.js",
     "main.js.map": "/Pathfinding-Visualizer/static/js/main.7bc3c089.chunk.js.map",
     "runtime-main.js": "/Pathfinding-Visualizer/static/js/runtime-main.1070c79d.js",
@@ -10,14 +10,14 @@
     "static/js/3.ce7bfef8.chunk.js": "/Pathfinding-Visualizer/static/js/3.ce7bfef8.chunk.js",
     "static/js/3.ce7bfef8.chunk.js.map": "/Pathfinding-Visualizer/static/js/3.ce7bfef8.chunk.js.map",
     "index.html": "/Pathfinding-Visualizer/index.html",
-    "static/css/main.d43572bd.chunk.css.map": "/Pathfinding-Visualizer/static/css/main.d43572bd.chunk.css.map",
+    "static/css/main.35005ad0.chunk.css.map": "/Pathfinding-Visualizer/static/css/main.35005ad0.chunk.css.map",
     "static/js/2.1e219c40.chunk.js.LICENSE.txt": "/Pathfinding-Visualizer/static/js/2.1e219c40.chunk.js.LICENSE.txt",
     "static/media/Node.css": "/Pathfinding-Visualizer/static/media/right-arrow.13081e6d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.1070c79d.js",
     "static/js/2.1e219c40.chunk.js",
-    "static/css/main.d43572bd.chunk.css",
+    "static/css/main.35005ad0.chunk.css",
     "static/js/main.7bc3c089.chunk.js"
   ]
 }
