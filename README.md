@@ -6,6 +6,8 @@ Access the visualizer at https://mayankagg2001.github.io/Pathfinding-Visualizer/
 2. HTML
 3. CSS
 
+This pathfinding visualizer finds the path with least weight using different algorithms.
+
 Breadth First Search
 ![pathfinding_visualizer_ss_1](https://user-images.githubusercontent.com/67370535/178330027-dfa5336e-a8b1-4430-85f1-0e163d51202f.png)
 
